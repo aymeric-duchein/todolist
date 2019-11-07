@@ -1,0 +1,33 @@
+@media only screen and (min-width: 600px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    grid-area: head;
+  }
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+  grid-gap: 16px;
+  grid-template-areas: "head" "content" "foot";
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: foot;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+
+  grid-area: head;
+}
